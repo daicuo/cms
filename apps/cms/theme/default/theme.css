@@ -1,0 +1,114 @@
+/*bootstrap default*/
+@media (min-width: 1400px){
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+      max-width: 1140px;
+  }
+}
+html,body {
+    height: 100%;
+    font-size: 14px;
+}
+body {
+    padding-top: 66px;
+    font-weight: 400;
+    background: #f4f4f4;
+    color: #616161;
+}
+a{
+    color: #0170B9;
+}
+a:hover{
+    color: #000000;
+    text-decoration: none;
+}
+/*模态框*/
+.modal-scrollbar-measure {
+    display: none;
+}
+/*分页*/
+.pagination{
+	font-size: 1.1rem;
+    margin-bottom: 0;
+}
+.pagination .page-item{
+	margin:auto 0.35rem;
+}
+.pagination .page-item .page-link{
+	color: #eee;
+	border-color: #0170B9;
+	background-color:#0170B9;
+	border-radius: .25rem;
+}
+.pagination .page-item .page-link:hover{
+	color: #eee;
+	background-color: #17a2b8;
+	border-color: #17a2b8;
+}
+.pagination .page-item.disabled{
+}
+.pagination .page-item.disabled .page-link{
+}
+.pagination .page-item.active{
+}
+.pagination .page-item.active .page-link{
+	color: #eee;
+	background-color: #17a2b8;
+	border-color: #17a2b8;
+}
+.pagination .page-item:first-child .page-link {
+}
+.pagination .page-item:last-child .page-link {
+}
+/*两种模式*/
+.page .pagination{
+    width: 100%;
+    margin: 0 auto;
+    display: flex!important;
+    justify-content: center!important;
+}
+.pagesmall .pagination{
+    width: 100%;
+    margin: 0 auto;
+    display: flex!important;
+    justify-content: space-between!important;
+}
+/*detail*/
+.content{
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+}
+.content blockquote{
+    display: block;
+    font-size: 1rem;
+    overflow: auto;
+    overflow-scrolling: touch;
+    border-left: 3px solid rgba(0,0,0,.4);
+    background: rgba(0,0,0,.05);
+    color: #6a737d;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    padding-left: 1em;
+    padding-right: .5em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+.content pre {
+    font-family: Consolas,"Liberation Mono",Menlo,Courier,monospace;
+    border-left: none;
+    background: #f8f9fa;
+    color: #212529;
+    white-space: pre;
+    word-spacing: normal;
+    word-wrap: normal;
+    tab-size: 4;
+    hyphens: none;
+    text-align: left;
+    font-size: .95rem;
+    line-height: 1.5rem;
+    padding: 1em;
+    border-radius: .2em;
+    margin: 1em 0;
+}
+.content pre code {
+    font-family: "Source Code Pro",monospace;
+}

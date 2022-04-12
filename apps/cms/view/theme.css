@@ -1,0 +1,8 @@
+/*插件后台专用CSS*/
+.pre-scrollable {
+    max-height: 768px !important;
+    overflow-y: auto;
+}
+.bg-f9{
+    background-color: #f9f9f9;
+}

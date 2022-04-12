@@ -1,0 +1,24 @@
+{extend name="apps/common/view/front.tpl" /}
+<!-- -->
+{block name="header_meta"}
+<title>最近更新－{:config('common.site_name')}</title>
+<meta name="keywords" content="{:config('common.site_name')}最新文章" />
+<meta name="description" content="{:config('common.site_name')}最近更新的100条文章！" />
+{/block}
+{block name="header"}{include file="widget/header" /}{/block}
+<!--main -->
+{block name="main"}
+<div class="container">
+  <ol class="breadcrumb bg-white mb-3">
+    <li class="breadcrumb-item"><a href="{:cmsUrl('cms/index/index')}">首页</a></li>
+    <li class="breadcrumb-item active">最近更新</li>
+  </ol>
+  <ol class="bg-white mb-3 px-5 py-3">
+  {volist name=":cmsSelect(['status'=>'normal','limit'=>100,'sort'=>'info_update_time','order'=>'desc'])" id="cms"}
+    <li class="py-2"><a href="{:cmsUrlDetail($cms)}">{$cms.info_name|DcHtml}</a> {$cms.info_update_time|cmsDate='Y-m-d',###}</li>
+  {/volist}
+  </ol>
+</div>
+{/block}
+<!-- -->
+{block name="footer"}{include file="widget/footer" /}{/block}
